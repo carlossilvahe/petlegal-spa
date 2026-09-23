@@ -1,0 +1,465 @@
+
+
+        <section class="cadastro-intro">
+
+            <header>
+
+                <p class="destaque">
+                    🐾 FAÇA PARTE DA PETLEGAL
+                </p>
+
+                <h1>
+                    Cadastre-se e
+                    <span>
+                        ajude a transformar vidas.
+                    </span>
+                </h1>
+
+                <p>
+                    Preencha seus dados e escolha como você
+                    gostaria de fazer parte da nossa causa.
+                </p>
+
+            </header>
+
+        </section>
+
+
+        <section class="cadastro-area">
+
+            <header class="titulo-secao">
+
+                <p>
+                    SEU CADASTRO
+                </p>
+
+                <h2>
+                    Conte um pouco sobre você
+                </h2>
+
+            </header>
+
+
+            <form
+                action="#"
+                method="post"
+                class="formulario-cadastro"
+            >
+
+                <fieldset>
+
+                    <legend>
+                        Dados pessoais
+                    </legend>
+
+
+                    <p>
+
+                        <label for="nome">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            autocomplete="name"
+                            minlength="3"
+                            maxlength="100"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="cpf">
+                            CPF
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cpf"
+                            name="cpf"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            placeholder="000.000.000-00"
+                            minlength="14"
+                            maxlength="14"
+                            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                            title="Digite o CPF no formato 000.000.000-00"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="data-nascimento">
+                            Data de nascimento
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data-nascimento"
+                            name="data-nascimento"
+                            autocomplete="bday"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            maxlength="100"
+                            placeholder="seuemail@exemplo.com"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            inputmode="tel"
+                            autocomplete="tel"
+                            placeholder="(19) 99999-9999"
+                            minlength="15"
+                            maxlength="15"
+                            pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                            title="Digite o telefone no formato (19) 99999-9999"
+                            required
+                        >
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Endereço
+                    </legend>
+
+
+                    <p>
+
+                        <label for="cep">
+                            CEP
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cep"
+                            name="cep"
+                            inputmode="numeric"
+                            autocomplete="postal-code"
+                            placeholder="00000-000"
+                            minlength="9"
+                            maxlength="9"
+                            pattern="[0-9]{5}-[0-9]{3}"
+                            title="Digite o CEP no formato 00000-000"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="endereco">
+                            Endereço
+                        </label>
+
+                        <input
+                            type="text"
+                            id="endereco"
+                            name="endereco"
+                            maxlength="150"
+                            placeholder="Rua, avenida ou outro endereço"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="numero">
+                            Número
+                        </label>
+
+                        <input
+                            type="text"
+                            id="numero"
+                            name="numero"
+                            maxlength="10"
+                            placeholder="Número"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="bairro">
+                            Bairro
+                        </label>
+
+                        <input
+                            type="text"
+                            id="bairro"
+                            name="bairro"
+                            autocomplete="address-level3"
+                            maxlength="80"
+                            placeholder="Digite seu bairro"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="cidade">
+                            Cidade
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cidade"
+                            name="cidade"
+                            autocomplete="address-level2"
+                            maxlength="80"
+                            placeholder="Digite sua cidade"
+                            required
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="estado">
+                            Estado
+                        </label>
+
+                        <select
+                            id="estado"
+                            name="estado"
+                            autocomplete="address-level1"
+                            required
+                        >
+
+                            <option value="">
+                                Selecione seu estado
+                            </option>
+
+                            <option value="SP">
+                                São Paulo
+                            </option>
+
+                            <option value="MG">
+                                Minas Gerais
+                            </option>
+
+                            <option value="RJ">
+                                Rio de Janeiro
+                            </option>
+
+                            <option value="PR">
+                                Paraná
+                            </option>
+
+                            <option value="SC">
+                                Santa Catarina
+                            </option>
+
+                            <option value="RS">
+                                Rio Grande do Sul
+                            </option>
+
+                            <option value="BA">
+                                Bahia
+                            </option>
+
+                            <option value="GO">
+                                Goiás
+                            </option>
+
+                            <option value="DF">
+                                Distrito Federal
+                            </option>
+
+                            <option value="Outro">
+                                Outro
+                            </option>
+
+                        </select>
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Como você deseja ajudar?
+                    </legend>
+
+
+                    <p>
+                        Escolha uma opção:
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="radio"
+                            id="adotar"
+                            name="participacao"
+                            value="adocao"
+                            required
+                        >
+
+                        <label for="adotar">
+                            Quero adotar
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="radio"
+                            id="voluntario"
+                            name="participacao"
+                            value="voluntario"
+                        >
+
+                        <label for="voluntario">
+                            Quero ser voluntário
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="radio"
+                            id="doar"
+                            name="participacao"
+                            value="doacao"
+                        >
+
+                        <label for="doar">
+                            Quero fazer uma doação
+                        </label>
+
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="radio"
+                            id="lar-temporario"
+                            name="participacao"
+                            value="lar-temporario"
+                        >
+
+                        <label for="lar-temporario">
+                            Quero oferecer um lar temporário
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>
+                        Mensagem
+                    </legend>
+
+
+                    <p>
+
+                        <label for="mensagem">
+                            Conte um pouco mais
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Escreva uma mensagem..."
+                        ></textarea>
+
+                    </p>
+
+
+                    <p>
+
+                        <input
+                            type="checkbox"
+                            id="termos"
+                            name="termos"
+                            required
+                        >
+
+                        <label for="termos">
+                            Confirmo que os dados informados
+                            estão corretos.
+                        </label>
+
+                    </p>
+
+                </fieldset>
+
+
+                <p>
+
+                    <button
+                        type="submit"
+                        class="botao principal"
+                    >
+                        Enviar cadastro 🐾
+                    </button>
+
+                </p>
+
+            </form>
+
+        </section>
+
+    

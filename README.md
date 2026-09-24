@@ -5,14 +5,16 @@ Projeto acadêmico desenvolvido para a ONG fictícia PetLegal, utilizando HTML5,
 
 ## Funcionalidades
 
-- Navegação SPA
-- Cadastro de usuários
+- Navegação SPA com JavaScript
+- Cadastro de apoiadores
 - Validação de formulário
-- Máscaras para CPF, telefone e CEP
-- Persistência de dados com LocalStorage
+- Máscaras para CPF e telefone
+- Armazenamento de dados com LocalStorage
 - Modal de confirmação com SweetAlert2
-- Responsividade
+- Design responsivo
+- Modo escuro com persistência em LocalStorage
 - Recursos de acessibilidade (WCAG)
+
 
 ## Tecnologias Utilizadas
 
@@ -24,13 +26,15 @@ Projeto acadêmico desenvolvido para a ONG fictícia PetLegal, utilizando HTML5,
 
 ## Acessibilidade
 
-Foram implementados:
+O projeto implementa recursos de acessibilidade para melhorar a experiência de utilização:
 
-- Estrutura semântica HTML
-- Skip Link ("Ir para o conteúdo principal")
-- Destaque visual de foco para navegação por teclado
-- Labels associadas aos campos do formulário
-- Compatibilidade com leitores de tela
+- Estrutura semântica com header, nav, main e footer
+- Labels e fieldsets em formulários
+- Skip Link para acesso rápido ao conteúdo principal
+- Navegação por teclado
+- Destaque visual em elementos com foco
+- Compatibilidade com leitores de ecrã
+- Modo escuro com melhor contraste visual
 
 ## Estrutura GitFlow
 

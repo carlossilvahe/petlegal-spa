@@ -272,3 +272,50 @@ carregarPagina("home");
 atualizarMenuAtivo(
     "home"
 );
+
+
+// =========================
+// MODO ESCURO
+// =========================
+
+function atualizarBotaoTema() {
+
+    const botao = document.getElementById("toggleTema");
+
+    if (!botao) return;
+
+    if (document.body.classList.contains("dark-mode")) {
+        botao.textContent = "☀️ Modo Claro";
+    } else {
+        botao.textContent = "🌙 Modo Escuro";
+    }
+}
+
+function inicializarTema() {
+
+    const botao = document.getElementById("toggleTema");
+
+    if (!botao) return;
+
+    if (localStorage.getItem("tema") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    atualizarBotaoTema();
+
+    botao.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark-mode");
+
+        localStorage.setItem(
+            "tema",
+            document.body.classList.contains("dark-mode")
+                ? "dark"
+                : "light"
+        );
+
+        atualizarBotaoTema();
+    });
+}
+
+inicializarTema();

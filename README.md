@@ -1,29 +1,51 @@
-# PetLegal
+# PetLegal SPA
 
-Projeto desenvolvido com HTML5, CSS3 e JavaScript.
+## Descrição
+Projeto acadêmico desenvolvido para a ONG fictícia PetLegal, utilizando HTML5, CSS3 e JavaScript puro (Vanilla JS).
 
 ## Funcionalidades
 
 - Navegação SPA
-- Renderização dinâmica de projetos
-- Formulário de cadastro
-- Máscaras de CPF, telefone e CEP
-- Validação de dados
-- LocalStorage
-- SweetAlert2
+- Cadastro de usuários
+- Validação de formulário
+- Máscaras para CPF, telefone e CEP
+- Persistência de dados com LocalStorage
+- Modal de confirmação com SweetAlert2
+- Responsividade
+- Recursos de acessibilidade (WCAG)
 
-## Tecnologias
+## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (Vanilla JS)
 - SweetAlert2
+- Git e GitHub
+
+## Acessibilidade
+
+Foram implementados:
+
+- Estrutura semântica HTML
+- Skip Link ("Ir para o conteúdo principal")
+- Destaque visual de foco para navegação por teclado
+- Labels associadas aos campos do formulário
+- Compatibilidade com leitores de tela
+
+## Estrutura GitFlow
+
+- main → versão estável
+- develop → integração
+- feature/formulario
+- feature/localstorage
+- feature/spa
+- feature/acessibilidade
 
 ## Como executar
 
-1. Baixe ou clone o repositório.
-2. Abra o projeto em um servidor local.
-3. Acesse o arquivo index.html pelo navegador.
+1. Clone o repositório
+2. Abra a pasta do projeto
+3. Execute o arquivo index.html em um navegador
 
 ## Autor
 

@@ -1136,6 +1136,22 @@ footer .copyright {
     font-size: 15px;
 }
 
+/* =========================
+   ACESSIBILIDADE - FOCO
+========================= */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 3px solid #e76f51;
+
+    outline-offset: 3px;
+
+}
+
 
 /* =========================================
    DESKTOP GRANDE
@@ -1358,4 +1374,43 @@ footer .copyright {
     font-size: 30px;
 
     cursor: pointer;
+}
+
+.modal-fechar:focus {
+
+    outline: 3px solid #e76f51;
+
+    outline-offset: 3px;
+
+}
+
+/* =========================
+   SKIP LINK
+========================= */
+
+.skip-link {
+
+    position: absolute;
+
+    left: -9999px;
+    top: 10px;
+
+    padding: 12px 18px;
+
+    background: #e76f51;
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    z-index: 9999;
+
+}
+
+.skip-link:focus {
+
+    left: 10px;
+
 }
